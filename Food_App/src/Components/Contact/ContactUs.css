@@ -1,0 +1,137 @@
+.contactUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: fit-content;
+}
+
+.contacttitel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacttitel h1 {
+    color: #335E90;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact {
+    /* margin: 50px auto; */
+    max-width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.contact-Col {
+    flex-basis: 48%;
+    color: rgb(73, 73, 73);
+}
+
+.contact-Col h3 {
+    color: #335E90;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.contact-Col p {
+    list-style: 0.3;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.contact-Col>ul>li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    list-style: none;
+    text-align: justify;
+}
+
+.contact-Col>ul>li>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #335E90;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #c0a6a6;
+    border-radius: 4px;
+    outline-color: #335E90;
+    padding: 15px;
+    border-radius: 5px;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    /* Firefox */
+    -moz-appearance: textfield;
+}
+
+.contact-Col>span {
+    display: block;
+    margin: 20px 0;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 700px) {
+    .contact {
+        display: block;
+    }
+
+    .contact-Col {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacttitel h1 {
+        font-size: 30px;
+    }
+
+    .contact-Col h3 {
+        font-size: 18px;
+    }
+
+    .contact-Col ul li {
+        margin: 5px;
+        word-break: break-all;
+    }
+
+    .contact-Col p {
+        font-size: 14.5px;
+        margin-top: 10px;
+    }
+
+    .contact-Col>ul>li>p {
+        font-size: 18px;
+    }
+
+    .contact-Col>ul>li {
+        font-size: 15px;
+    }
+}
